@@ -1,43 +1,32 @@
 export default [
   {
-    path: '/welcome',
-    name: 'welcome',
-    icon: 'smile',
-    component: './Welcome',
+    name: '服务',
+    path: '/services',
+    component: './Services',
   },
   {
-    path: '/myPage',
-    name: '我的页面',
-    icon: 'smile',
-    component: './MyPage',
+    name: '路由',
+    path: '/routes',
+    component: './Routes',
   },
   {
-    path: '/admin',
-    name: 'admin',
-    icon: 'crown',
-    access: 'canAdmin',
-    component: './Admin',
-    routes: [
-      {
-        path: '/admin/sub-page',
-        name: 'sub-page',
-        icon: 'smile',
-        component: './Welcome',
-      },
-      {
-        component: './404',
-      },
-    ],
+    name: '插件',
+    path: '/plugins',
+    component: './Plugins',
   },
   {
-    name: 'list.table-list',
-    icon: 'table',
-    path: '/list',
-    component: './TableList',
+    name: '上游',
+    path: '/upstreams',
+    component: './Upstreams',
+  },
+  {
+    name: '上游',
+    path: '/connections',
+    component: './Connections',
   },
   {
     path: '/',
-    redirect: '/welcome',
+    redirect: '/services',
   },
   {
     component: './404',
